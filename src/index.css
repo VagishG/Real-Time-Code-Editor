@@ -1,0 +1,88 @@
+/* BASE CSS CLASSES CUSTOM TO THIS PROJECT */
+
+.flex {
+  display: flex;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.center {
+  align-items: center;
+}
+
+/* FOR THE CUSTOM CSS */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 75% 5%;
+  grid-template-rows: 5% 5% 5% 85%;
+  grid-template-areas:
+    "area1 area2 side"
+    "area4 area5 side"
+    "area10 area5 side"
+    "area6 area7 side";
+}
+
+.Prime {
+  /* background-color: black; */
+  grid-row: 1/1;
+  grid-column: 1/1;
+  border-right: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  background-color: #f4f4f4;
+}
+
+.Sub{
+  background-color: #f4f4f4;
+  border-right: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  padding: 2px;
+}
+.invite{
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  height: 25px;
+  width: 75px;
+}
+.Sub > h2{
+  font-size: 18px;
+}
+
+.side{
+  grid-area: side;
+  height: 100%;
+  background-color: #F4F4F4;
+  border-left:1px solid #DDDDDD ;
+}
+
+.down{
+  justify-content: end;
+}
+.down > img,.side>img{
+  padding: 10%;
+}
+
+.Search{
+  grid-area: area4;
+  background-color: #f4f4f4;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+.Editor{
+  background-color: blueviolet;
+  grid-area:area7 ;
+}
